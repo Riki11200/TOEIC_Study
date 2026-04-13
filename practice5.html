@@ -1,32 +1,48 @@
-<!-- practice5.html -->
- 
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Part5 練習</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Part5 練習</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
     <h2>Part5 問題</h2>
 
-    <div id="question"></div>
-    <p id="translation"></p>
     <div id="stats"></div>
+    <div id="questionStats"></div>
 
+    <div id="question"></div>
     <div id="choices"></div>
 
-    <p id="answer" style="display: none"></p>
+    <p id="answer" style="display:none;"></p>
+    <p id="translation"></p>
+    <p id="comment"></p>
 
-    <br />
+    <div class="controls">
+      <button onclick="showAnswer()">答え</button>
+      <button onclick="showTranslation()">和訳</button>
+    </div>
 
-    <button onclick="showAnswer()">答え</button>
-    <button onclick="prevQuestion()">前へ</button>
-    <button onclick="nextQuestion()">次へ</button>
-    <button onclick="location.href = 'index.html'">ホーム</button>
-    <button onclick="showTranslation()">和訳</button>
-    
-    <script src="data.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <div class="controls">
+      <button onclick="prevQuestion()">前へ</button>
+      <button onclick="nextQuestion()">次へ</button>
+    </div>
+
+    <div class="controls">
+      <button onclick="wrongModeNext()">復習</button>
+      <button onclick="removeFromWrong()">克服</button>
+      <button onclick="clearAllData()">リセット</button>
+      <button onclick="location.href='index.html'">ホーム</button>
+    </div>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
 </html>
