@@ -407,5 +407,647 @@ const questions = [
     choices: ["with", "to", "for", "on"],
     answer: "with",
     translation: "従業員は会社の規則に従わなければならない"
+  },
+  {
+    id: 51,
+    type: "noun",
+    question: "The company made a significant ______ in its strategy.",
+    choices: ["change", "changing", "changed", "changeable"],
+    answer: "change",
+    translation: "その会社は戦略に大きな変更を加えた",
+    comment: "a + 形容詞の後は名詞"
+  },
+  {
+    id: 52,
+    type: "adverb",
+    question: "Employees must respond ______ to all inquiries.",
+    choices: ["prompt", "promptly", "prompting", "promptness"],
+    answer: "promptly",
+    translation: "従業員はすべての問い合わせに迅速に対応しなければならない",
+    comment: "動詞を修飾 → 副詞"
+  },
+  {
+    id: 53,
+    type: "adjective",
+    question: "The manager gave a very ______ explanation.",
+    choices: ["clear", "clearly", "clarity", "clearing"],
+    answer: "clear",
+    translation: "マネージャーはとても分かりやすい説明をした",
+    comment: "very の後は形容詞"
+  },
+  {
+    id: 54,
+    type: "verb",
+    question: "The report was ______ by the director.",
+    choices: ["approve", "approving", "approved", "approval"],
+    answer: "approved",
+    translation: "その報告書は部長によって承認された",
+    comment: "be動詞 + 過去分詞（受動態）"
+  },
+  {
+    id: 55,
+    type: "adjective",
+    question: "We are looking for a highly ______ candidate.",
+    choices: ["motivate", "motivating", "motivated", "motivation"],
+    answer: "motivated",
+    translation: "私たちは非常に意欲的な候補者を探している",
+    comment: "人の状態 → ed"
+  },
+
+  {
+    id: 56,
+    type: "noun",
+    question: "There has been a steady ______ in sales.",
+    choices: ["increase", "increasing", "increased", "increasingly"],
+    answer: "increase",
+    translation: "売上は着実に増加している",
+    comment: "a + 形容詞の後 → 名詞"
+  },
+  {
+    id: 57,
+    type: "adverb",
+    question: "She spoke ______ during the meeting.",
+    choices: ["confidence", "confident", "confidently", "confidential"],
+    answer: "confidently",
+    translation: "彼女は会議中自信を持って話した",
+    comment: "動詞 spoke を修飾 → 副詞"
+  },
+  {
+    id: 58,
+    type: "noun",
+    question: "The manager expressed his ______ about the issue.",
+    choices: ["concern", "concerned", "concerning", "concerns"],
+    answer: "concern",
+    translation: "マネージャーはその問題について懸念を示した",
+    comment: "his の後は名詞"
+  },
+  {
+    id: 59,
+    type: "adjective",
+    question: "The report provides ______ information.",
+    choices: ["value", "valuable", "valuably", "valuation"],
+    answer: "valuable",
+    translation: "その報告書は有益な情報を提供する",
+    comment: "名詞 information を修飾 → 形容詞"
+  },
+  {
+    id: 60,
+    type: "adverb",
+    question: "The task was completed ______.",
+    choices: ["success", "successful", "successfully", "succeed"],
+    answer: "successfully",
+    translation: "その作業は無事に完了した",
+    comment: "動詞を修飾 → 副詞"
+  },
+
+  {
+    id: 61,
+    type: "noun",
+    question: "She has experience in project ______.",
+    choices: ["manage", "manager", "management", "manageable"],
+    answer: "management",
+    translation: "彼女はプロジェクト管理の経験がある",
+    comment: "in の後は名詞"
+  },
+  {
+    id: 62,
+    type: "adjective",
+    question: "The CEO made a very ______ decision.",
+    choices: ["controversy", "controversial", "controversially", "controvert"],
+    answer: "controversial",
+    translation: "CEOは非常に物議を醸す決定をした",
+    comment: "decision を修飾 → 形容詞"
+  },
+  {
+    id: 63,
+    type: "adjective",
+    question: "The results were quite ______.",
+    choices: ["impress", "impressed", "impressive", "impression"],
+    answer: "impressive",
+    translation: "結果は非常に印象的だった",
+    comment: "be動詞の後 → 形容詞"
+  },
+  {
+    id: 64,
+    type: "noun",
+    question: "We appreciate your prompt ______.",
+    choices: ["respond", "response", "responsive", "responding"],
+    answer: "response",
+    translation: "迅速な対応に感謝します",
+    comment: "your の後 → 名詞"
+  },
+  {
+    id: 65,
+    type: "noun",
+    question: "The company seeks employees with strong communication ______.",
+    choices: ["skill", "skills", "skilled", "skillful"],
+    answer: "skills",
+    translation: "その会社は優れたコミュニケーション能力を持つ従業員を求めている",
+    comment: "能力系は複数形が自然"
+  },
+
+  {
+    id: 66,
+    type: "noun",
+    question: "The sudden ______ of the flight caused confusion.",
+    choices: ["cancel", "cancellation", "canceled", "canceling"],
+    answer: "cancellation",
+    translation: "突然のフライトのキャンセルが混乱を引き起こした",
+    comment: "the + 名詞"
+  },
+  {
+    id: 67,
+    type: "adverb",
+    question: "The instructions were ______ written.",
+    choices: ["clear", "clearly", "clarity", "clearing"],
+    answer: "clearly",
+    translation: "指示は明確に書かれていた",
+    comment: "written を修飾 → 副詞"
+  },
+  {
+    id: 68,
+    type: "noun",
+    question: "There is a strong ______ that sales will rise.",
+    choices: ["likely", "likelihood", "liken", "alike"],
+    answer: "likelihood",
+    translation: "売上が上がる可能性が高い",
+    comment: "a + 形容詞の後 → 名詞"
+  },
+  {
+    id: 69,
+    type: "verb",
+    question: "The new system will ______ efficiency.",
+    choices: ["improvement", "improve", "improving", "improved"],
+    answer: "improve",
+    translation: "新しいシステムは効率を改善するだろう",
+    comment: "will の後 → 動詞原形"
+  },
+  {
+    id: 70,
+    type: "adjective",
+    question: "The company faced serious ______ problems.",
+    choices: ["finance", "financial", "financially", "financing"],
+    answer: "financial",
+    translation: "会社は深刻な財政問題に直面した",
+    comment: "名詞を修飾 → 形容詞"
+  },
+  {
+    id: 101,
+    type: "noun",
+    question: "The company announced the ______ of a new product.",
+    choices: ["launch", "launching", "launched", "launches"],
+    answer: "launch",
+    translation: "その会社は新製品の発売を発表した",
+    comment: "the + 名詞"
+  },
+  {
+    id: 102,
+    type: "adverb",
+    question: "The task was completed ______ despite difficulties.",
+    choices: ["success", "successful", "successfully", "succeed"],
+    answer: "successfully",
+    translation: "困難にもかかわらず作業は成功裏に完了した",
+    comment: "動詞 completed を修飾 → 副詞"
+  },
+  {
+    id: 103,
+    type: "adjective",
+    question: "The manager gave a very ______ response.",
+    choices: ["help", "helpful", "helpfully", "helpfulness"],
+    answer: "helpful",
+    translation: "マネージャーは非常に役立つ返答をした",
+    comment: "名詞 response を修飾"
+  },
+  {
+    id: 104,
+    type: "verb",
+    question: "The company plans to ______ its services next year.",
+    choices: ["expand", "expansion", "expanding", "expanded"],
+    answer: "expand",
+    translation: "その会社は来年サービスを拡大する予定だ",
+    comment: "to の後 → 動詞原形"
+  },
+  {
+    id: 105,
+    type: "adjective",
+    question: "The results were quite ______.",
+    choices: ["satisfy", "satisfied", "satisfactory", "satisfactorily"],
+    answer: "satisfactory",
+    translation: "結果はかなり満足のいくものだった",
+    comment: "be動詞の後 → 形容詞"
+  },
+
+  {
+    id: 106,
+    type: "noun",
+    question: "There has been a rapid ______ in demand.",
+    choices: ["grow", "growth", "growing", "grown"],
+    answer: "growth",
+    translation: "需要が急速に増加している",
+    comment: "a + 形容詞 + 名詞"
+  },
+  {
+    id: 107,
+    type: "adverb",
+    question: "Employees must act ______ in emergencies.",
+    choices: ["quick", "quickly", "quickness", "quicken"],
+    answer: "quickly",
+    translation: "従業員は緊急時に迅速に行動しなければならない",
+    comment: "動詞 act を修飾"
+  },
+  {
+    id: 108,
+    type: "adjective",
+    question: "The company faces serious ______ issues.",
+    choices: ["finance", "financial", "financially", "financing"],
+    answer: "financial",
+    translation: "会社は深刻な財務問題に直面している",
+    comment: "名詞を修飾"
+  },
+  {
+    id: 109,
+    type: "noun",
+    question: "We appreciate your prompt ______.",
+    choices: ["respond", "response", "responsive", "responding"],
+    answer: "response",
+    translation: "迅速な対応に感謝します",
+    comment: "your の後 → 名詞"
+  },
+  {
+    id: 110,
+    type: "verb",
+    question: "The new system will ______ efficiency.",
+    choices: ["improve", "improvement", "improving", "improved"],
+    answer: "improve",
+    translation: "新システムは効率を向上させるだろう",
+    comment: "will の後 → 動詞原形"
+  },
+
+  {
+    id: 111,
+    type: "adjective",
+    question: "The presentation was very ______.",
+    choices: ["interest", "interesting", "interested", "interestingly"],
+    answer: "interesting",
+    translation: "プレゼンはとても興味深かった",
+    comment: "モノの性質 → ing"
+  },
+  {
+    id: 112,
+    type: "noun",
+    question: "The manager made an important ______.",
+    choices: ["decide", "decision", "deciding", "decisive"],
+    answer: "decision",
+    translation: "マネージャーは重要な決定をした",
+    comment: "a + 形容詞 + 名詞"
+  },
+  {
+    id: 113,
+    type: "adverb",
+    question: "The issue was handled very ______.",
+    choices: ["careful", "carefully", "care", "caring"],
+    answer: "carefully",
+    translation: "問題は非常に慎重に扱われた",
+    comment: "動詞を修飾"
+  },
+  {
+    id: 114,
+    type: "noun",
+    question: "There is little ______ that the plan will fail.",
+    choices: ["doubt", "doubtful", "doubting", "doubted"],
+    answer: "doubt",
+    translation: "その計画が失敗する可能性はほとんどない",
+    comment: "little + 名詞"
+  },
+  {
+    id: 115,
+    type: "adjective",
+    question: "The instructions were easy to ______.",
+    choices: ["follow", "following", "followed", "follows"],
+    answer: "follow",
+    translation: "その指示は従いやすかった",
+    comment: "to の後 → 動詞原形"
+  },
+
+  {
+    id: 116,
+    type: "noun",
+    question: "The company showed significant ______.",
+    choices: ["grow", "growth", "growing", "grown"],
+    answer: "growth",
+    translation: "会社は著しい成長を見せた",
+    comment: "形容詞の後 → 名詞"
+  },
+  {
+    id: 117,
+    type: "adverb",
+    question: "The report was written ______.",
+    choices: ["clear", "clearly", "clarity", "clearing"],
+    answer: "clearly",
+    translation: "報告書は明確に書かれていた",
+    comment: "動詞を修飾"
+  },
+  {
+    id: 118,
+    type: "adjective",
+    question: "The company is seeking ______ candidates.",
+    choices: ["experience", "experienced", "experiencefully", "experiencing"],
+    answer: "experienced",
+    translation: "会社は経験豊富な候補者を探している",
+    comment: "人の状態 → ed"
+  },
+  {
+    id: 119,
+    type: "noun",
+    question: "The sudden ______ caused confusion.",
+    choices: ["cancel", "cancellation", "canceling", "canceled"],
+    answer: "cancellation",
+    translation: "突然のキャンセルが混乱を引き起こした",
+    comment: "the + 名詞"
+  },
+  {
+    id: 120,
+    type: "verb",
+    question: "The company aims to ______ its market share.",
+    choices: ["increase", "increasing", "increased", "increasingly"],
+    answer: "increase",
+    translation: "会社は市場シェアを拡大することを目指している",
+    comment: "to の後 → 動詞原形"
+  },
+
+  {
+    id: 121,
+    type: "adjective",
+    question: "The results were extremely ______.",
+    choices: ["impress", "impressive", "impressed", "impression"],
+    answer: "impressive",
+    translation: "結果は非常に印象的だった",
+    comment: "be動詞の後 → 形容詞"
+  },
+  {
+    id: 122,
+    type: "adverb",
+    question: "Employees must respond ______ to emails.",
+    choices: ["quick", "quickly", "quickness", "quicken"],
+    answer: "quickly",
+    translation: "従業員はメールに迅速に対応しなければならない",
+    comment: "動詞を修飾"
+  },
+  {
+    id: 123,
+    type: "noun",
+    question: "The company is known for its high ______.",
+    choices: ["quality", "qualify", "qualified", "qualifying"],
+    answer: "quality",
+    translation: "その会社は高品質で知られている",
+    comment: "its の後 → 名詞"
+  },
+  {
+    id: 124,
+    type: "adjective",
+    question: "The manager gave a highly ______ speech.",
+    choices: ["motivate", "motivating", "motivated", "motivation"],
+    answer: "motivating",
+    translation: "マネージャーは非常にやる気を起こさせるスピーチをした",
+    comment: "モノ → ing"
+  },
+  {
+    id: 125,
+    type: "noun",
+    question: "There has been a noticeable ______.",
+    choices: ["improve", "improvement", "improving", "improved"],
+    answer: "improvement",
+    translation: "顕著な改善があった",
+    comment: "a の後 → 名詞"
+  },
+
+  {
+    id: 126,
+    type: "adverb",
+    question: "The task was ______ completed.",
+    choices: ["quick", "quickly", "quickness", "quicken"],
+    answer: "quickly",
+    translation: "作業は迅速に完了した",
+    comment: "completed を修飾"
+  },
+  {
+    id: 127,
+    type: "adjective",
+    question: "The company is facing ______ competition.",
+    choices: ["intense", "intensely", "intensity", "intensify"],
+    answer: "intense",
+    translation: "会社は激しい競争に直面している",
+    comment: "名詞を修飾"
+  },
+  {
+    id: 128,
+    type: "noun",
+    question: "The manager provided a clear ______.",
+    choices: ["explain", "explanation", "explaining", "explained"],
+    answer: "explanation",
+    translation: "マネージャーは明確な説明をした",
+    comment: "a + 形容詞 + 名詞"
+  },
+  {
+    id: 129,
+    type: "verb",
+    question: "The company will ______ new employees.",
+    choices: ["hire", "hiring", "hired", "hires"],
+    answer: "hire",
+    translation: "会社は新しい従業員を雇うだろう",
+    comment: "will の後 → 動詞原形"
+  },
+  {
+    id: 130,
+    type: "adjective",
+    question: "The results were quite ______.",
+    choices: ["surprise", "surprising", "surprised", "surprisingly"],
+    answer: "surprising",
+    translation: "結果はかなり驚くべきものだった",
+    comment: "モノ → ing"
+  },
+
+  {
+    id: 131,
+    type: "noun",
+    question: "The company showed great ______ in sales.",
+    choices: ["increase", "increasing", "increased", "increasingly"],
+    answer: "increase",
+    translation: "会社は売上の大きな増加を示した",
+    comment: "great の後 → 名詞"
+  },
+  {
+    id: 132,
+    type: "adverb",
+    question: "The issue was ______ resolved.",
+    choices: ["quick", "quickly", "quickness", "quicken"],
+    answer: "quickly",
+    translation: "問題は迅速に解決された",
+    comment: "動詞を修飾"
+  },
+  {
+    id: 133,
+    type: "adjective",
+    question: "The manager is a highly ______ individual.",
+    choices: ["motivate", "motivated", "motivating", "motivation"],
+    answer: "motivated",
+    translation: "マネージャーは非常に意欲的な人物だ",
+    comment: "人 → ed"
+  },
+  {
+    id: 134,
+    type: "noun",
+    question: "The company made a significant ______.",
+    choices: ["expand", "expansion", "expanding", "expanded"],
+    answer: "expansion",
+    translation: "会社は大きな拡大を行った",
+    comment: "a + 形容詞 + 名詞"
+  },
+  {
+    id: 135,
+    type: "verb",
+    question: "The system will ______ data automatically.",
+    choices: ["process", "processing", "processed", "processes"],
+    answer: "process",
+    translation: "システムは自動的にデータを処理する",
+    comment: "will の後 → 動詞原形"
+  },
+
+  {
+    id: 136,
+    type: "adjective",
+    question: "The presentation was very ______.",
+    choices: ["confuse", "confusing", "confused", "confusion"],
+    answer: "confusing",
+    translation: "プレゼンはとても分かりにくかった",
+    comment: "モノ → ing"
+  },
+  {
+    id: 137,
+    type: "adverb",
+    question: "Employees must work ______ to meet deadlines.",
+    choices: ["hard", "hardly", "hardness", "harden"],
+    answer: "hard",
+    translation: "従業員は締め切りに間に合うよう一生懸命働かなければならない",
+    comment: "hard = 副詞（-lyでない例）"
+  },
+  {
+    id: 138,
+    type: "noun",
+    question: "There is a growing ______ for skilled workers.",
+    choices: ["demand", "demanding", "demanded", "demands"],
+    answer: "demand",
+    translation: "熟練労働者の需要が高まっている",
+    comment: "a + 形容詞 + 名詞"
+  },
+  {
+    id: 139,
+    type: "verb",
+    question: "The company plans to ______ its operations.",
+    choices: ["expand", "expansion", "expanding", "expanded"],
+    answer: "expand",
+    translation: "会社は事業を拡大する予定だ",
+    comment: "to の後 → 動詞原形"
+  },
+  {
+    id: 140,
+    type: "adjective",
+    question: "The results were extremely ______.",
+    choices: ["satisfy", "satisfied", "satisfying", "satisfaction"],
+    answer: "satisfying",
+    translation: "結果は非常に満足のいくものだった",
+    comment: "モノ → ing"
+  },
+
+  {
+    id: 141,
+    type: "noun",
+    question: "The company showed steady ______.",
+    choices: ["grow", "growth", "growing", "grown"],
+    answer: "growth",
+    translation: "会社は安定した成長を見せた",
+    comment: "形容詞の後 → 名詞"
+  },
+  {
+    id: 142,
+    type: "adverb",
+    question: "The report was written ______.",
+    choices: ["clear", "clearly", "clarity", "clearing"],
+    answer: "clearly",
+    translation: "報告書は明確に書かれていた",
+    comment: "動詞を修飾"
+  },
+  {
+    id: 143,
+    type: "adjective",
+    question: "The manager gave a ______ explanation.",
+    choices: ["detail", "detailed", "detailly", "detailing"],
+    answer: "detailed",
+    translation: "マネージャーは詳細な説明をした",
+    comment: "名詞を修飾"
+  },
+  {
+    id: 144,
+    type: "noun",
+    question: "The sudden ______ surprised everyone.",
+    choices: ["arrive", "arrival", "arriving", "arrived"],
+    answer: "arrival",
+    translation: "突然の到着が皆を驚かせた",
+    comment: "the + 名詞"
+  },
+  {
+    id: 145,
+    type: "verb",
+    question: "The system will ______ errors automatically.",
+    choices: ["detect", "detection", "detecting", "detected"],
+    answer: "detect",
+    translation: "システムは自動的にエラーを検出する",
+    comment: "will の後 → 動詞原形"
+  },
+
+  {
+    id: 146,
+    type: "adjective",
+    question: "The movie was very ______.",
+    choices: ["interest", "interesting", "interested", "interestingly"],
+    answer: "interesting",
+    translation: "その映画はとても面白かった",
+    comment: "モノ → ing"
+  },
+  {
+    id: 147,
+    type: "adverb",
+    question: "Employees must respond ______ to requests.",
+    choices: ["prompt", "promptly", "promptness", "prompting"],
+    answer: "promptly",
+    translation: "従業員は要請に迅速に対応しなければならない",
+    comment: "動詞を修飾"
+  },
+  {
+    id: 148,
+    type: "noun",
+    question: "The company made an important ______.",
+    choices: ["decide", "decision", "deciding", "decisive"],
+    answer: "decision",
+    translation: "会社は重要な決定を下した",
+    comment: "a + 形容詞 + 名詞"
+  },
+  {
+    id: 149,
+    type: "adjective",
+    question: "The manager is a highly ______ person.",
+    choices: ["motivate", "motivated", "motivating", "motivation"],
+    answer: "motivated",
+    translation: "マネージャーは非常に意欲的な人物だ",
+    comment: "人 → ed"
+  },
+  {
+    id: 150,
+    type: "noun",
+    question: "There has been a noticeable ______ in performance.",
+    choices: ["improve", "improvement", "improving", "improved"],
+    answer: "improvement",
+    translation: "業績に顕著な改善があった",
+    comment: "a + 形容詞 + 名詞"
   }
-];
+]
