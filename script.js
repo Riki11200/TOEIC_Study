@@ -4,16 +4,24 @@ let currentIndex = 0;
 let history = [];
 let historyIndex = -1;
 
+let stats = JSON.parse(localStorage.getItem("TOEIC_STATS")) || {
+  total: 0,
+  correct: 0,
+  answers: {},
+};
+
 // 初期表示
 window.onload = () => {
   showQuestion();
 };
 
 function showQuestion() {
+  updateStatsUI();
+
   const q = questions[currentIndex];
 
   document.getElementById("question").textContent =
-    `Q${q.id} (${q.type || "unknown"}) : ${q.question}`;
+    `[${q.type}] (${q.type || "unknown"}) : ${q.question}`;
 
   const choicesDiv = document.getElementById("choices");
   choicesDiv.innerHTML = "";
@@ -23,11 +31,23 @@ function showQuestion() {
     btn.textContent = choice;
 
     btn.onclick = () => {
-      if (choice === q.answer) {
+      stats.total++;
+
+      const isCorrect = choice === q.answer;
+
+      if (isCorrect) {
+        stats.correct++;
         btn.style.backgroundColor = "lightgreen";
       } else {
         btn.style.backgroundColor = "salmon";
       }
+
+      // 問題IDごとに記録
+      stats.answers[q.id] = isCorrect;
+
+      saveStats();
+
+      updateStatsUI();
     };
 
     choicesDiv.appendChild(btn);
@@ -40,6 +60,10 @@ function showQuestion() {
 }
 function showAnswer() {
   document.getElementById("answer").style.display = "block";
+}
+
+function saveStats() {
+  localStorage.setItem("TOEIC_STATS", JSON.stringify(stats));
 }
 
 function nextQuestion() {
@@ -74,4 +98,13 @@ function prevQuestion() {
 function showTranslation() {
   const q = questions[currentIndex];
   document.getElementById("translation").textContent = q.translation;
+  document.getElementById("comment").textContent = q.comment || "";
+}
+
+function updateStatsUI() {
+  const rate =
+    stats.total === 0 ? 0 : Math.round((stats.correct / stats.total) * 100);
+
+  document.getElementById("stats").textContent =
+    `解答数: ${stats.total} / 正解率: ${rate}%`;
 }
