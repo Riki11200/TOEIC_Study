@@ -1,20 +1,20 @@
-/* style.css */
-
 body {
   font-family: sans-serif;
   background: #f5f7fb;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
 }
 
-/* カード */
+/* 共通カード */
 .container {
+  width: 92%;
+  max-width: 500px;
   background: white;
-  padding: 30px;
-  border-radius: 16px;
-  width: 350px;
+  padding: 20px;
+  border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
 }
@@ -27,46 +27,37 @@ body {
 
 /* 選択肢 */
 #choices button {
-  display: block;
   width: 100%;
   margin: 8px 0;
-  padding: 12px;
+  padding: 14px;
+  font-size: 16px;
   border-radius: 10px;
   border: none;
   background: #e3e8ff;
   cursor: pointer;
-  font-size: 16px;
-}
-
-#choices button:hover {
-  background: #cfd8ff;
 }
 
 /* 操作ボタン */
 .controls {
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
 
 .controls button {
-  margin: 5px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: none;
-  background: #333;
-  color: white;
-  cursor: pointer;
+  flex: 1 1 40%;
+  min-width: 120px;
 }
 
-.controls button:hover {
-  background: #555;
-}
+/* ホーム画面 */
 .home {
   background: #f5f7fb;
-  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .menu {
@@ -77,27 +68,20 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.menu h1 {
-  margin-bottom: 10px;
-}
-
-.menu button {
-  display: block;
-  width: 200px;
-  margin: 10px auto;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  background: #4a6cf7;
-  color: white;
+/* ボタン共通 */
+button {
   font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.menu button:hover {
-  background: #3a5ae0;
+button:active {
+  transform: scale(0.97);
 }
 
+/* 正解・不正解 */
 button.correct {
   background: #4caf50 !important;
   color: white;
