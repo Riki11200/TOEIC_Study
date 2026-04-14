@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 共通カード */
+.container {
+  width: 92%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* 問題 */
+#question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* 選択肢 */
+#choices button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #e3e8ff;
+  cursor: pointer;
+}
+
+/* 操作ボタン */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.controls button {
+  flex: 1 1 40%;
+  min-width: 120px;
+}
+
+/* ホーム画面 */
+.home {
+  background: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.menu {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ボタン共通 */
+button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* 正解・不正解 */
+button.correct {
+  background: #4caf50 !important;
+  color: white;
+}
+
+button.wrong {
+  background: #f44336 !important;
+  color: white;
+}
